@@ -12,7 +12,7 @@
 
 Запросы передаются в формате JSON и имеют следующий вид:
 
-```jsonv
+```json
 {
     "command": "CheckLocalFile",
     "params": {
