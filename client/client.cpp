@@ -152,7 +152,7 @@ nlohmann::json CClient::CreateParams(const std::string& command, const std::vect
         params["filePath"] = args[0];
     }
     else {
-        std::cout << "\nMissing params\n\n";
+        std::cout << "\nMissing params or wrong command\n\n";
         exit(1);
     }
     return params;
