@@ -1,5 +1,5 @@
 # sandbox_task_int3
-#// add socket wrapper and wsa wrapper, replace dynamic arr to vec, check uniform init
+#// add socket wrapper and wsa wrapper, replace dynamic arr to vec, move mutable mutex into inside class, check uniform init
 ## Описание
 Проект состоит из многопоточного TCP-сервера и однопоточного консольного клиента. Клиент отправляет запросы в формате JSON серверу, который обрабатывает команды `CheckLocalFile` и `QuarantineLocalFile`.
 - `CheckLocalFile` - проверяет указанный в запросе файл на сигнатуру (путь к файлу, и сигнатура передается в параметрах запроса). В ответе сервер отправляет список смещений найденных сигнатур. Сигнатура представляется в виде набора байт длиной до 1Кб.
